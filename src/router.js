@@ -1,5 +1,6 @@
 import VueRouter from 'vue-router'
 import InventoryGUI from './components/InventoryGUI';
+import AwsTest from './components/AwsTest';
 
 // const inventoryGUI = {
 //     template: 
@@ -13,7 +14,13 @@ const router = new VueRouter({
             component: InventoryGUI
         },
         {
-            path: '/:encodedBuild',
+            path: '/test/awsTest',
+            name: 'awsTest',
+            component: AwsTest,
+            props: true
+        },
+        {
+            path: '/build/:encodedBuild',
             name: 'homeId',
             component: InventoryGUI,
             props: true

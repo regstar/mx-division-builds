@@ -59,6 +59,10 @@ coreService.subscribeAllSlotsData$().subscribe(([
     SideArm,
     Specialization,
 ]) => {
+    const _router = router;
+    if (_router.history.current.name.toLowerCase().indexOf('test') > -1) {
+        return
+    }
     statsService.resetStats();
     const wearablesIds =
         wearableToIds([
@@ -82,7 +86,6 @@ coreService.subscribeAllSlotsData$().subscribe(([
     const buildData = [wearablesIds.join(':'), weapondsIds.join(':'), specializationIds.join(':')].join(':');
     statsService.afterEncoding();
     const encodedBuild = compressToEncodedURIComponent(buildData);
-    const _router = router;
     if (_router.history.current.params.encodedBuild !== encodedBuild) {
         router.push({
             name: 'homeId',
