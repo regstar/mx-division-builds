@@ -9,8 +9,10 @@
     "gh-pages-deploy": "node scripts/gh-pages-deploy.js"
   },
   "dependencies": {
+    "@aws-amplify/ui-vue": "^0.2.7",
     "ag-grid-community": "^23.0.2",
     "ag-grid-vue": "^23.0.2",
+    "aws-amplify": "^3.0.16",
     "core-js": "^3.6.4",
     "lz-string": "^1.4.4",
     "papaparse": "^5.2.0",

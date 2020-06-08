@@ -4,6 +4,12 @@ import VModal from 'vue-js-modal';
 import vSelect from 'vue-select';
 import VueRouter from 'vue-router';
 import router from "./router";
+import Amplify from 'aws-amplify';
+import '@aws-amplify/ui-vue';
+import aws_exports from './aws-exports';
+
+Amplify.configure(aws_exports);
+
 Vue.config.productionTip = false
 
 Vue.use(VModal, {
