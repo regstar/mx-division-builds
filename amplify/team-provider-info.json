@@ -10,6 +10,11 @@
             "StackName": "amplify-mxdivisiontools-dev-154639",
             "StackId": "arn:aws:cloudformation:eu-west-1:402669787763:stack/amplify-mxdivisiontools-dev-154639/7c06ebe0-a98e-11ea-8262-06e1cdb6e382",
             "AmplifyAppId": "d8h0a07djz0vg"
+        },
+        "categories": {
+            "auth": {
+                "mxdivisiontools812559cf": {}
+            }
         }
     }
 }
